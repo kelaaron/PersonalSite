@@ -1,0 +1,131 @@
+#toplinks{
+    position:fixed;
+    border-bottom-style: solid;
+    height: 25pt;
+    background-color: #195190FF;
+    color:#A2A2A1FF;
+    display:block;
+    border-bottom:none;
+}
+ul li{  
+    float: right;
+    padding: 20pt;
+    list-style: none;
+    display: inline-block;
+    position:relative;
+    color:snow;
+    text-decoration:none;
+    
+}
+li{
+    display: inline-block;
+}
+#right ul {
+    position: relative;
+    margin-top: 10px;
+    float: right;
+    padding: 20pt;
+}
+#right li{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+#left ul {
+    margin-top:5px;
+    position:relative;
+    float: left;
+    padding: 20pt;
+}
+#left li{
+    font-size: 17px;
+    margin-right: 15px;
+    margin-left: 0px;
+}
+#link{
+    position:relative;
+    float: right;
+    color:snow;
+    text-decoration:none;
+}
+#link:hover{
+    color: red;
+}
+#about{
+    background-color:gainsboro;
+}
+#aboutbody{
+    background-color:gainsboro;
+    position: relative;
+    top:-20px;
+}
+#abouttitle{
+    background-color:gainsboro;
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#index{
+    background-color: #195190FF;
+    color:snow;
+}
+#indexphoto{
+    max-width: 200px;
+    max-height:200px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-right:auto;
+    margin-left:auto;
+}
+#indexheader{
+    text-align:center;
+    background-color: #195190FF;
+    color:snow;
+}
+#indexbody{
+    background-color: #195190FF;
+    color:snow;
+    text-align:center;
+}
+#logos{
+    background-color: #195190FF;
+    text-align:center;
+}
+
+.logocontainer{
+    background-color: #195190FF;
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    height:50px;
+    width:50px;
+    padding-left: 5px;
+}
+.logocontainer img{
+    background-color: #195190FF;
+    height:50px;
+    width:50px;
+}
+
+#images{
+    background-color: #195190FF;
+    text-align:center;
+}
+#resumebutton{
+    margin:auto;
+    text-align: center;
+}
+#resumebutton button{
+    background-color: snow;
+    color: #195190FF;
+    font-size: 16px;
+    padding: 15px 32px;
+    text-decoration: none;
+    border-radius: 50%;
+    border-color: black;
+}
+#resumebutton button:hover{
+    color: snow;
+    background-color: #195190FF;
+}
