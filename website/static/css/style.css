@@ -1,4 +1,8 @@
+body{
+    background-color:gainsboro;
+}
 #toplinks{
+    z-index: 1;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     position:fixed;
@@ -34,15 +38,22 @@
 #about{
     background-color:gainsboro;
 }
-#aboutbody{
-    font-family: Arial, Helvetica, sans-serif;
+#experience{
+    width:100%;
+    background-color:#195190FF;
+}
+#projects{
     background-color:gainsboro;
+}
+#textbody{
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     top:-20px;
+    width:100%;
 }
-#abouttitle{
+#texttitle{
+    width:100%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:gainsboro;
     font-size: 20px;
     text-align: center;
     margin-left: auto;
@@ -86,11 +97,13 @@
     height:50px;
     width:50px;
     padding-left: 5px;
+    border-radius: 15px;
 }
 .logocontainer img{
     background-color: #195190FF;
     height:50px;
     width:50px;
+    border-radius: 10px;
 }
 
 #images{
@@ -114,4 +127,31 @@
 #resumebutton button:hover{
     color: snow;
     background-color: #195190FF;
+}
+#projectsrow{
+    margin-left:auto;
+    margin-right:auto;
+    display:table;
+    width:auto;
+    border-spacing: 1em;
+}
+#indproj{
+    position:relative;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0px;
+    display: table-cell;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 9px;
+}
+#indproj img{
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    border-radius: 9px;
+    vertical-align: middle;
+    width: 400px;
+    height: 400px;
 }
