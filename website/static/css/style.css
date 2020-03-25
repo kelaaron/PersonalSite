@@ -1,5 +1,7 @@
 body{
-    background-color:gainsboro;
+    background-color:#195190FF;
+    width: 100%;
+    text-align: center;
 }
 /* ############ NAV BAR AND OVERALL STUFF ###### */
 #toplinks{
@@ -37,22 +39,26 @@ body{
     color: red;
 }
 #about{
-    background-color:gainsboro;
+    background-color:snow;
+    min-width:960px;
+    margin:0;
 }
 #experience{
+    color: snow;
     width:100%;
     background-color:#195190FF;
 }
-#projects{
-    background-color:gainsboro;
-}
 #textbody{
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     top:-20px;
     width:100%;
+    
 }
 #texttitle{
+    min-width:960px;
+    font-weight: 500;
     width:100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -64,6 +70,7 @@ body{
 #index{
     background-color: #195190FF;
     color:snow;
+    width: 100%;
 }
 #indexphoto{
     max-width: 200px;
@@ -129,21 +136,59 @@ body{
 #resumebutton button:hover{
     color: snow;
     background-color: #195190FF;
+}/* ################# EXPERIENCE #####################*/
+#indexp{
+    width: 50%;
+    text-align:center;
+    position:relative;
+    flex-direction: column;
+    min-width: 0px;
+    display: table-row;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 9px;
+}
+#indexp img{
+    float: left;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    border-radius: 9px;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+#indexp header{
+    color: black;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#indexp p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 /* ################# PROJECTS #####################*/
+#projects{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:snow;
+}
 #projectsrow{
+    width: 50%;
     margin-left:auto;
     margin-right:auto;
     display:table;
-    width:auto;
     border-spacing: 1em;
 }
 #indproj{
+    width: 50%;
+    text-align:center;
     position:relative;
     flex-direction: column;
-    justify-content: center;
     min-width: 0px;
-    display: table-cell;
+    display: table-row;
     background-color: white;
     border-style: solid;
     border-color: black;
@@ -151,27 +196,21 @@ body{
     border-radius: 9px;
 }
 #indproj img{
+    float: left;
     border-top-right-radius: 1px;
     border-top-left-radius: 1px;
     border-radius: 9px;
     vertical-align: middle;
-    width: 400px;
-    height: 400px;
+    width: 100px;
+    height: 100px;
 }
 #indproj header{
+    display: inline;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 #indproj p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 /* ################# NAV BAR STYLING #####################*/
