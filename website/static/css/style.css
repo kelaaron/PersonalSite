@@ -43,6 +43,14 @@ body{
     min-width:960px;
     margin:0;
 }
+.beach{
+    width: 75%;
+    height: 700px;
+}
+.amster{
+    width:75%;
+    height: 1100px;
+}
 #experience{
     color: snow;
     width:100%;
@@ -55,6 +63,25 @@ body{
     top:-20px;
     width:100%;
     
+}
+.textbody:hover .overlay{
+    opacity: 1;
+}
+.textbody:hover .text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#textbody p{
+    margin-left: 25%;
+    text-align: center;
+    width: 50%;
 }
 #texttitle{
     min-width:960px;
@@ -136,7 +163,8 @@ body{
 #resumebutton button:hover{
     color: snow;
     background-color: #195190FF;
-}/* ################# EXPERIENCE #####################*/
+}
+/* ################# EXPERIENCE #####################*/
 #indexp{
     width: 50%;
     text-align:center;
@@ -201,8 +229,8 @@ body{
     border-top-left-radius: 1px;
     border-radius: 9px;
     vertical-align: middle;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 100%;
 }
 #indproj header{
     display: inline;
@@ -213,4 +241,23 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
-/* ################# NAV BAR STYLING #####################*/
+#indproj button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: snow;
+    color: #195190FF;
+    font-size: 12px;
+    padding: 15px 32px;
+    text-decoration: none;
+    border-radius: 10%;
+    border-color: black;
+}
+#indproj button:hover{
+    color: snow;
+    background-color: #195190FF;
+}
+/* ################# CONTACT #####################*/
+#contact{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#195190FF;
+    color: snow;
+}
