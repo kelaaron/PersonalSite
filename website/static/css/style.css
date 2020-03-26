@@ -64,20 +64,6 @@ body{
     width:100%;
     
 }
-.textbody:hover .overlay{
-    opacity: 1;
-}
-.textbody:hover .text{
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 #textbody p{
     margin-left: 25%;
     text-align: center;
