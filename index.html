@@ -20,6 +20,36 @@
 
         gtag('config', 'UA-161935116-1');
     </script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 
     <meta property="og:image" content="website/static/images/thumbnail.jpg">
     <title> Aaron Kelley</title>
@@ -47,7 +77,7 @@
                 <p style="font-size: 30px">Hi, I'm Aaron Kelley!</p>
             </div>
             <div id="indexbody">
-                <p style="font-size: 21px">I'm a software engineer at Affirm based in New York City.
+                <p style="font-size: 21px">I'm a software engineer at Affirm based in New York City. In my free time, I love traveling, skiing / skateboarding, trying new foods, and learning about the natural world.
                 </p>
             </div>
             <div id="logos">
@@ -71,17 +101,56 @@
             <br>
             <div id="textbody">
                 <p style="text-align: left;">
-                    My name is Aaron Kelley and I'm a senior, graduating in May 2021, studying Computer Science Engineering at the University of Michigan in Ann
-                    Arbor. I grew up outside of Detroit, MI, and was a Michigan fan my whole life. Originally coming to Michigan to study Aerospace Engineering, 
-                    I fell in love with Computer Science freshman year and never looked back. I love the opportunity Computer Science gives me think creatively to solve 
-                    problems that I am excited about.
+                    In my free time, I can usually be found skiing, riding my longboard, cheering on Detroit sports teams, and checking out new coffee shops around NYC. I'm also passionate about traveling, and love chatting about unique traveling locations/stories!
                 </p>
-                <img class="beach" src="website/static/images/mombeach.jpeg"></img>
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="website/static/images/mombeach.jpeg" style="width:100%">
+                    <div class="text">Naples Florida in 2017 with my best friend (my mom)</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="website/static/images/Jonamsterdam.jpeg" style="width:100%">
+                    <div class="text">Amsterdam in 2018 on my European Backpacking trip</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="website/static/images/salento.jpg" style="width:100%">
+                    <div class="text">Salento, Colombia in 2023 - tallest palm trees in the world!</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="website/static/images/minca.jpg" style="width:100%">
+                    <div class="text">Minca, Colombia in 2023 - best sunset I've ever seen</div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+                <!-- <img class="beach" src="website/static/images/mombeach.jpeg"></img> -->
                 <p style="text-align: left;">
                     Outside of class, I love skiing, camping, sports, and outdoor education.
                 </p>
                 <p style="text-align: left;">I love to travel, and can usually be found riding my longboard and listening to music.</p>
-                <img class="amster" src="website/static/images/Jonamsterdam.jpeg"></img>
+                <!-- <img class="amster" src="website/static/images/Jonamsterdam.jpeg"></img> -->
                 <p style="text-align: left;">
                     Thank you so much for visiting my page. Please feel free to reach out to me!
                 </p>
