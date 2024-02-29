@@ -20,36 +20,6 @@
 
         gtag('config', 'UA-161935116-1');
     </script>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        }
-    </script>
 
     <meta property="og:image" content="website/static/images/thumbnail.jpg">
     <title> Aaron Kelley</title>
@@ -111,7 +81,7 @@
                     <div class="mySlides fade">
                     <div class="numbertext">1 / 4</div>
                     <img src="website/static/images/mombeach.jpeg" style="width:100%">
-                    <div class="text">Naples Florida in 2017 with my best friend (my mom)</div>
+                    <div class="text">Naples, Florida in 2017 with my best friend (my mom)</div>
                     </div>
                 
                     <div class="mySlides fade">
@@ -119,14 +89,18 @@
                     <img src="website/static/images/Jonamsterdam.jpeg" style="width:100%">
                     <div class="text">Amsterdam in 2018 on my European Backpacking trip</div>
                     </div>
-                
                     <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
+                    <div class="numbertext">3 / 5</div>
+                    <img src="website/static/images/chiang_mai.jpg" style="width:100%">
+                    <div class="text">Chiang Mai, Thailand 2022 - I thought I was way better at biking than I was</div>
+                    </div>
+                    <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
                     <img src="website/static/images/salento.jpg" style="width:100%">
                     <div class="text">Salento, Colombia in 2023 - tallest palm trees in the world!</div>
                     </div>
                     <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
+                    <div class="numbertext">5 / 5</div>
                     <img src="website/static/images/minca.jpg" style="width:100%">
                     <div class="text">Minca, Colombia in 2023 - best sunset I've ever seen</div>
                     </div>
@@ -145,14 +119,41 @@
                     <span class="dot" onclick="currentSlide(4)"></span>
                 </div>
 
-                <!-- <img class="beach" src="website/static/images/mombeach.jpeg"></img> -->
-                <p style="text-align: left;">
-                    Outside of class, I love skiing, camping, sports, and outdoor education.
-                </p>
-                <p style="text-align: left;">I love to travel, and can usually be found riding my longboard and listening to music.</p>
-                <!-- <img class="amster" src="website/static/images/Jonamsterdam.jpeg"></img> -->
-                <p style="text-align: left;">
-                    Thank you so much for visiting my page. Please feel free to reach out to me!
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    // currentSlide(2);
+            
+                    // Next/previous controls
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+            
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+            
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        console.log(slides.length)
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                    }
+                </script>
+
+                <p style="text-align: center;">
+                    Thank you so much for visiting my page!
                 </p>
             </div>
         </div>
